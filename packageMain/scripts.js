@@ -20,7 +20,7 @@ const buscarPokemon = () => {
 buscarPokemon()
 
 const mostrarPokemon = (pokemon) => {
-    console.log(pokemon);
+    //console.log(pokemon);
     const html = pokemon
         .map(
             (cadaPokemon) => `
@@ -28,10 +28,11 @@ const mostrarPokemon = (pokemon) => {
             <h2>${cadaPokemon.nome}</h2>
             <img src = "${cadaPokemon.imagem}"/>
         </li>
-        `).join('');
+        `).join(''); //convert para String
     pokedex.innerHTML = html;
 };
 
 
 
 const pokedex = document.getElementById('pokedex');
+
